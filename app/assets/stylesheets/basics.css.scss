@@ -6,3 +6,47 @@ body {
 	color:#fff;
 	background:#08344E;
 }
+
+.fbconnect {
+	position:relative;
+	background:#3b5998;
+	border-radius:3px;
+	border:1px solid #213a6e;
+	box-shadow:0 1px 2px #5f7ab3 inset, 0 -1px 1px #1b315d inset, 0 1px 2px #153949;
+	height:36px;
+	line-height:36px;
+	display:inline-block;
+	text-align:center;
+}
+	.fbconnect:hover {
+		background:#3e5c9e;
+		border:1px solid #1e3463;
+		box-shadow:0 1px 2px #617db8 inset, 0 -1px 1px #192e57 inset, 0 1px 3px #143645;
+	}
+	.fbconnect:active {
+		background:#37528c;
+		border:1px solid #1c305c;
+		box-shadow:0 1px 3px #192e57 inset;
+	}
+		.fbconnect:active .fbconnect__icon {
+			border-right:1px solid #2e477d;
+		}
+		.fbconnect:active .fbconnect__text {
+			border-left:1px solid #395591;
+		}
+	.fbconnect__icon {
+		border-right:1px solid #334f8a;
+		display:inline-block;
+		height:inherit;
+		vertical-align:top;
+	}
+	.fbconnect__text {
+		border-left:1px solid #405e9d;
+		display:inline-block;
+		height:inherit;
+		vertical-align:top;
+		color:#fff;
+		font-size:16px;
+		padding:0 13px;
+		text-shadow:0 0 3px #1e325e;
+	}
