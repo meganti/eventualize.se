@@ -12,17 +12,12 @@
   </head>
 
   <body>
-
-		<div class="header">
-			<h1><a href=""><img src="<%= image_path "logo-eventualize.png" %>" alt="Eventualize.se" /></a></h1>
-		</div>
-
+    
+    <%= render :partial => "layouts/header" %>
+  
     <%= yield %>
-
-    <div class="footer">
-      <%= render :partial => "layouts/social_plugins" %>
-      <%= render :partial => "layouts/footer_menu" %>  
-    </div>
+    
+    <%= render :partial => "layouts/footer" %>
 
   </body>
 
