@@ -53,6 +53,10 @@ module Eventos
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    # Prevents the Rails environment to be loaded when the assets:precompile task is executed.
+    # Needed for heroku deploys
+    config.assets.initialize_on_precompile = false
+
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
