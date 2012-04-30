@@ -59,6 +59,15 @@ a {
 	margin:90px 0 0;
 }
 
+.start {
+	height:164px;
+	width:400px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-86px 0 0 -200px;
+}
+
 	.introduction {
 		margin:0 auto 40px;
     color:rgba(255,255,255,.8);
@@ -68,6 +77,23 @@ a {
     text-decoration:none;
     text-shadow: 0px 1px 1px #000000;
 		width:400px;
+	}
+	
+	.searchevent__input {
+		height:60px;
+		line-height:60px;
+		padding:0 10px;
+		width:300px;
+		@include border-radius(5px);
+		border:1px solid #213a6e;
+		font-size:16px;
+		color:#bbb;
+	}
+	.searchevent__submit {
+		height:60px;
+		line-height:60px;
+		border:1px solid #213a6e;
+		padding:0 20px;
 	}
 
 .fbconnect {
