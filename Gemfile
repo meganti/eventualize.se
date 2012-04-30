@@ -7,6 +7,7 @@ gem 'thin'
 gem 'sqlite3', :group => "development"
 gem 'fb_graph'
 gem 'bourbon'
+gem 'httparty'
 
 group :production do
   gem 'pg'

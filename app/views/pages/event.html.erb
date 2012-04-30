@@ -1,10 +1,15 @@
 <div class="main">
 	
 	<div class="eventinfo">
-		<h2 class="eventinfo__eventname">Event name</h2>
-		<h3 class="eventinfo__ownername"><span>by</span> Owner name</h3>
-		<p class="eventinfo__description">Lorem ipsum dolor sit amet consecutur dolor it.</p>
-		<p class="eventifo__eventtime">30 de abril de 2012, 20h</p>
+		<h2 class="eventinfo__eventname"><%= @event.name %></h2>
+		<h3 class="eventinfo__ownername"><span>by</span> <%= @event.owner.name %></h3>
+		<p class="eventinfo__description"><%= @event.description %></p>
+		<p class="eventifo__eventtime"><%= @event.start_time.strftime("%d/%m/%Y %H:%M") %></p>
 	</div>
 	
 </div>
+
+<br><br><br><br><br>
+<%= @users_hash.inspect %>
+<br><br>
+<%= @users.inspect %>
