@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.backstretch.min
+//= require interface
 //= require_tree .
