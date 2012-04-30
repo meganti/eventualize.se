@@ -3,7 +3,6 @@ var images = [
   , "assets/bg-2.jpg"
   , "assets/bg-3.jpg"
   , "assets/bg-4.jpg"
-  , "assets/bg-5.jpg"
 ];
 
 $(images).each(function(){
