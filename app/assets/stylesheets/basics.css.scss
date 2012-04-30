@@ -11,9 +11,6 @@ a {
 	color:#fff;
 	text-decoration:none;
 }
-	a:hover {
-		text-decoration:underline;
-	}
 
 .header {
 	text-align:center;
@@ -21,17 +18,42 @@ a {
 }
 
 	.userinfo {
-		width:410px;
-		margin:20px auto;
-		text-align:right;
+		position:absolute;
+		left:0;
+		top:0;
+		margin:10px;
+		text-align:left;
+    color:rgba(255,255,255,.3);
 	}
-		.userinfo__logout {
-			text-transform:uppercase;
-			display:block;
-			margin:6px 0 0;
-		}
 		.userinfo__username {
-			font-weight:bold;
+       color:rgba(255,255,255,.7);
+       font-weight:bold;
+       text-size:14px;
+       text-decoration:none;
+       @include transition(color .25s ease);
+       text-shadow: 0px 1px 1px #000000;
+		}
+
+	.userlogout {
+		position:absolute;
+		top:0;
+		right:0;
+		margin:10px;
+		text-align:right;
+    color:rgba(255,255,255,.3);
+	}
+		.userlogout__button {
+			display:block;
+	    color:rgba(255,255,255,.7);
+	    font-weight:bold;
+	    text-size:14px;
+	    text-decoration:none;
+	    @include transition(color .25s ease);
+	    text-shadow: 0px 1px 1px #000000;
+	    &:hover {
+	      color:rgba(255,255,255,1);
+	      @include transition(color .25s ease);
+	    }
 		}
 
 .fbconnect {

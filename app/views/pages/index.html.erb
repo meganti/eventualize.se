@@ -1,8 +1,10 @@
 <% if session[:facebook].present? %>
 
   <p class="userinfo">
-		Obrigado por logar, <span class="userinfo__username"><%= session[:facebook][:name] %></span>
-  	<%= link_to "Deslogar", logout_path, :method => :delete, :class => "userinfo__logout" %>
+		Você está logado como <span class="userinfo__username"><%= session[:facebook][:name] %></span>
+	</p>
+	<p class="userlogout">
+  	<%= link_to "Deslogar", logout_path, :method => :delete, :class => "userlogout__button" %>
 	</p>
 
 <% else %>
