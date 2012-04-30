@@ -28,7 +28,6 @@ a {
 		.userinfo__username {
        color:rgba(255,255,255,.7);
        font-weight:bold;
-       text-size:14px;
        text-decoration:none;
        @include transition(color .25s ease);
        text-shadow: 0px 1px 1px #000000;
@@ -46,7 +45,6 @@ a {
 			display:block;
 	    color:rgba(255,255,255,.7);
 	    font-weight:bold;
-	    text-size:14px;
 	    text-decoration:none;
 	    @include transition(color .25s ease);
 	    text-shadow: 0px 1px 1px #000000;
@@ -55,6 +53,22 @@ a {
 	      @include transition(color .25s ease);
 	    }
 		}
+
+.main {
+	text-align:center;
+	margin:90px 0 0;
+}
+
+	.introduction {
+		margin:0 auto 40px;
+    color:rgba(255,255,255,.8);
+    font-weight:bold;
+    font-size:16px;
+		line-height:22px;
+    text-decoration:none;
+    text-shadow: 0px 1px 1px #000000;
+		width:400px;
+	}
 
 .fbconnect {
 	position:relative;

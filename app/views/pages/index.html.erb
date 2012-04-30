@@ -9,8 +9,16 @@
 
 <% else %>
 
-	<a href="/auth/facebook" class="fbconnect">
-		<span class="fbconnect__icon"><img src="<%= image_path "icon-fbconnect.png" %>" alt="Facebook connect" /></span><span class="fbconnect__text">Conecte-se</span>
-	</a>
+	<div class="main">
+
+		<h2 class="introduction">
+			Descubra quantos homens e mulheres vão estar presentes nos seus eventos do Facebook conectando-se abaixo.
+		</h2>
+
+		<a href="/auth/facebook" class="fbconnect">
+			<span class="fbconnect__icon"><img src="<%= image_path "icon-fbconnect.png" %>" alt="Facebook connect" /></span><span class="fbconnect__text">Conecte-se</span>
+		</a>
+
+	</div>
 
 <% end %>
