@@ -2,7 +2,9 @@
 class AuthenticationsController < ApplicationController
   def create
     auth = request.env['omniauth.auth']
+    
     session[:facebook] = {}
+    session[:facebook][:access_token] = auth.credentials.token
     session[:facebook][:provider] = auth['provider']
     session[:facebook][:uid] = auth['uid']
     session[:facebook][:name] = auth['info']['first_name']

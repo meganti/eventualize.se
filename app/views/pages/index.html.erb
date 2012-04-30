@@ -2,7 +2,6 @@
 
 <% if session[:facebook].present? %>
   Obrigado por logar, <%= session[:facebook][:name] %>
-  
   <%= link_to "Deslogar", logout_path, :method => :delete %>
 <% else %>
   <a href="/auth/facebook" class="auth_provider">Logar com Facebook</a>
