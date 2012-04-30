@@ -1,2 +1,10 @@
-<h1>Eventualize-se</h1>
-<h2>Para utilizar o serviço, você precisa estar conectado com sua conta do Facebook.</h2>
+<h1>Index matador</h1>
+
+<% if session[:facebook].present? %>
+  Obrigado por logar, <%= session[:facebook][:name] %>
+  
+  <%= link_to "Deslogar", logout_path, :method => :delete %>
+<% else %>
+  <a href="/auth/facebook" class="auth_provider">Logar com Facebook</a>
+<% end %>
+
