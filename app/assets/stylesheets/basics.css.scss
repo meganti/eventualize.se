@@ -103,6 +103,34 @@ a {
 		text-shadow:0 1px 3px #000;
 	}
 
+.terms {
+  width: 50%;
+  height:300px;
+  margin:40px auto 0;
+  padding:40px;
+  background:rgba(0,0,0,.5);
+  overflow-x:hidden;
+  overflow-y:scroll;
+  @include border-radius(6px);
+  h1, h2, p {
+    text-shadow: 0px 1px 1px #000000;
+  }
+  h1 {
+    font-size:18px;
+  }
+  h2 {
+    color:#ccc;
+    font-size:14px;
+    font-weight:bold;
+    margin:20px 0 10px;
+  }
+  p {
+    line-height:15px;
+    text-align:justify;
+    color:#fff;
+  }
+}
+
 .footer {
   position:absolute;
   width:100%;
@@ -123,7 +151,6 @@ a {
       margin:5px 0 0 10px;
       color:rgba(255,255,255,.3);
       a {
-        float:left;
         color:rgba(255,255,255,.7);
         font-weight:bold;
         text-size:14px;
