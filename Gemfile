@@ -6,6 +6,7 @@ gem 'omniauth-facebook'
 gem 'thin'
 gem 'sqlite3', :group => "development"
 gem 'fb_graph'
+gem 'bourbon'
 
 group :production do
   gem 'pg'

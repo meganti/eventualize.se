@@ -80,3 +80,39 @@ a {
 		padding:0 30px;
 		text-shadow:0 1px 3px #000;
 	}
+
+.footer {
+  position:absolute;
+  width:100%;
+  bottom:0;
+  .social {
+    float:left;
+    margin:10px;
+    .button {
+      float:left;
+      margin:0 10px 0 0;
+    }
+  }
+  .footer-links {
+    float:right;
+    margin:10px 15px 10px 10px;
+    li {
+      float:left;
+      margin:5px 0 0 10px;
+      color:rgba(255,255,255,.3);
+      a {
+        float:left;
+        color:rgba(255,255,255,.7);
+        font-weight:bold;
+        text-size:14px;
+        text-decoration:none;
+        @include transition(color .25s ease);
+        text-shadow: 0px 1px 1px #000000;
+        &:hover {
+          color:rgba(255,255,255,1);
+          @include transition(color .25s ease);
+        }
+      }
+    }
+  }
+}

@@ -1,13 +1,31 @@
-<div class="footer">
-  <div class="social">
-    <div class="button fb">
-      <div class="fb-like" data-href="https://www.eventualize.se" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
-    </div>
-    <div class="button tw">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.eventualize.se" data-via="tourist_card" data-count="none">Tweet</a>          
-    </div>
-    <div class="button g+">
-      <g:plusone size="medium" href="<%= root_path %>" annotation="none"></g:plusone>
-    </div>
+<div class="social">
+  <div class="button fb">
+    <div class="fb-like" data-href="https://www.eventualize.se" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false"></div>
+  </div>
+  <div class="button tw">
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.eventualize.se" data-via="eventualizese" data-count="none">Tweet</a>          
+  </div>
+  <div class="button g+">
+    <g:plusone size="medium" href="<%= root_path %>" annotation="none"></g:plusone>
   </div>
 </div>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<script type="text/javascript">
+  window.___gcfg = {lang: 'pt-BR'};
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=259846450722130";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
