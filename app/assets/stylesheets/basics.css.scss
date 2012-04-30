@@ -7,6 +7,33 @@ body {
 	background:#000;
 }
 
+a {
+	color:#fff;
+	text-decoration:none;
+}
+	a:hover {
+		text-decoration:underline;
+	}
+
+.header {
+	text-align:center;
+	padding:50px 0 0;
+}
+
+	.userinfo {
+		width:410px;
+		margin:20px auto;
+		text-align:right;
+	}
+		.userinfo__logout {
+			text-transform:uppercase;
+			display:block;
+			margin:6px 0 0;
+		}
+		.userinfo__username {
+			font-weight:bold;
+		}
+
 .fbconnect {
 	position:relative;
 	background:#3b5998;
