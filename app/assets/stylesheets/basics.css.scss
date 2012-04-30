@@ -62,8 +62,8 @@ a {
 	border-radius:3px;
 	border:1px solid #213a6e;
 	box-shadow:0 1px 2px #5f7ab3 inset, 0 -1px 1px #1b315d inset;
-	height:60px;
-	line-height:60px;
+	height:48px;
+	padding:12px 0 0;
 	display:inline-block;
 	text-align:center;
 }
@@ -88,18 +88,17 @@ a {
 		display:inline-block;
 		height:inherit;
 		vertical-align:top;
-		margin:11px 0 0;
 		padding:0 10px;
 	}
 	.fbconnect__text {
 		border-left:1px solid #405e9d;
 		display:inline-block;
-		height:inherit;
+		height:38px;
 		vertical-align:top;
 		color:#fff;
 		font-size:18px;
 		font-weight:bold;
-		padding:0 30px;
+		padding:10px 30px 0;
 		text-shadow:0 1px 3px #000;
 	}
 
