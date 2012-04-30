@@ -12,9 +12,9 @@ body {
 	background:#3b5998;
 	border-radius:3px;
 	border:1px solid #213a6e;
-	box-shadow:0 1px 2px #5f7ab3 inset, 0 -1px 1px #1b315d inset, 0 1px 2px #153949;
-	height:36px;
-	line-height:36px;
+	box-shadow:0 1px 2px #5f7ab3 inset, 0 -1px 1px #1b315d inset;
+	height:60px;
+	line-height:60px;
 	display:inline-block;
 	text-align:center;
 }
@@ -39,6 +39,8 @@ body {
 		display:inline-block;
 		height:inherit;
 		vertical-align:top;
+		margin:11px 0 0;
+		padding:0 10px;
 	}
 	.fbconnect__text {
 		border-left:1px solid #405e9d;
@@ -46,7 +48,8 @@ body {
 		height:inherit;
 		vertical-align:top;
 		color:#fff;
-		font-size:16px;
-		padding:0 13px;
-		text-shadow:0 0 3px #1e325e;
+		font-size:18px;
+		font-weight:bold;
+		padding:0 30px;
+		text-shadow:0 1px 3px #000;
 	}
