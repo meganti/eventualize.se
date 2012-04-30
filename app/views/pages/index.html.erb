@@ -1,9 +1,12 @@
-<h1>Index matador</h1>
-
 <% if session[:facebook].present? %>
+
   Obrigado por logar, <%= session[:facebook][:name] %>
   <%= link_to "Deslogar", logout_path, :method => :delete %>
-<% else %>
-  <a href="/auth/facebook" class="auth_provider">Logar com Facebook</a>
-<% end %>
 
+<% else %>
+
+	<a href="/auth/facebook" class="fbconnect">
+		<span class="fbconnect__icon"><img src="<%= image_path "icon-fbconnect.png" %>" alt="Facebook connect" /></span><span class="fbconnect__text">Conecte-se</span>
+	</a>
+
+<% end %>

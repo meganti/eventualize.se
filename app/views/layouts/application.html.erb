@@ -2,19 +2,25 @@
 
 <html>
 
-	<head>
-		
-	  <title>Eventos</title>
-	  <%= stylesheet_link_tag    "application", :media => "all" %>
-	  <%= javascript_include_tag "application" %>
-	  <%= csrf_meta_tags %>
-	
-	</head>
+  <head>
 
-	<body>
+    <title>Eventualize.se</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
 
-		<%= yield %>
+  </head>
 
-	</body>
+  <body>
+
+		<div class="header">
+			<h1><a href=""><img src="<%= image_path "logo-eventualize.png" %>" alt="Eventualize.se" /></a></h1>
+		</div>
+
+    <%= yield %>
+
+    <%= render :partial => "layouts/social_plugins" %>
+
+  </body>
 
 </html>
