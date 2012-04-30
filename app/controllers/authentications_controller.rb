@@ -1,19 +1,18 @@
+# encoding: UTF-8
 class AuthenticationsController < ApplicationController
-  def index
-    @authentications = current_user.authentications if current_user
-  end
-
   def create
-    auth = request.env["rack.auth"]
-    current_user.authentications.find_or_create_by_provider_and_uid(auth['provider'], auth['uid'])
-    flash[:notice] = "Authentication successful."
-    redirect_to authentications_url
+    auth = request.env['omniauth.auth']
+    session[:facebook] = {}
+    session[:facebook][:provider] = auth['provider']
+    session[:facebook][:uid] = auth['uid']
+    session[:facebook][:name] = auth['info']['first_name']
+    flash[:notice] = "Autenticação realizada com sucesso!"
+    redirect_to root_url
   end
 
   def destroy
-    @authentication = current_user.authentications.find(params[:id])
-    @authentication.destroy
+    session[:facebook] = nil
     flash[:notice] = "Successfully destroyed authentication."
-    redirect_to authentications_url
+    redirect_to root_url
   end
 end
