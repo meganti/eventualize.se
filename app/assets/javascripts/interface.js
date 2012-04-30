@@ -12,9 +12,9 @@ $(images).each(function(){
 
 var index = 0;
 
-$.backstretch(images[index], {speed: 2000});
+$.backstretch(images[index], {speed: 3000});
 
 setInterval(function() {
   index = (index >= images.length - 1) ? 0 : index + 1;
   $.backstretch(images[index]);
-}, 7000);
+}, 10000);
