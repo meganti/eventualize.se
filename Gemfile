@@ -8,7 +8,10 @@ gem 'fb_graph'
 gem 'bourbon'
 gem 'httparty'
 
-gem 'sqlite3', :group => "development"
+group :development do
+  gem 'sqlite3'
+  gem 'ruby-debug19'
+end
 
 group :production do
   gem 'pg'

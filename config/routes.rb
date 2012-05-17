@@ -4,6 +4,6 @@ Eventos::Application.routes.draw do
   
   root :to => 'pages#index'
   
-  get "event" => "pages#event", :as => "event"
-  get "terms" => "pages#terms", :as => "terms"
+  post "event" => "pages#event", :as => :event
+  get "terms" => "pages#terms", :as => :terms
 end

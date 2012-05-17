@@ -9,7 +9,16 @@
 	
 </div>
 
-<br><br><br><br><br>
-<%= @users_hash.inspect %>
+<p>Homens: <%= @males.size %></p>
+<p>Damas:  <%= @females.size %></p>
+
+<h3>Homens:</h3>
+<% @males.each do |user| %>
+  <%= link_to user["name"], user["link"] %> <br>
+<% end %>
 <br><br>
-<%= @users.inspect %>
+<h3>Mulheres</h3>
+<% @females.each do |user| %>
+  <%= link_to user["name"], user["link"] %> <br>
+<% end %>
+

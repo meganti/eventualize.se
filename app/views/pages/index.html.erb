@@ -15,11 +15,11 @@
 			<h2 class="introduction">
 				Copie a URL do evento que você deseja obter as informações e cole-a no campo abaixo.
 			</h2>
-
-			<form class="searchevent">
-				<input type="text" placeholder="Cole a URL do evento aqui" class="searchevent__input" />
-				<input type="submit" value="Ok" class="searchevent__submit" />
-			</form>
+      
+      <%= form_tag event_path, method: :post, class: :searchevent do %>
+        <%= text_field_tag :event, "", class: :searchevent__input, placeholder: "Cole a URL do evento aqui" %>
+        <%= submit_tag "Ok", class: :searchevent__submit %>
+      <% end %>
 	
 		</div>
 
