@@ -80,9 +80,9 @@ a {
 	}
 	
 	.searchevent__input {
-		height:60px;
+		height:40px;
 		line-height:60px;
-		padding:0 10px;
+		padding:10px;
 		width:300px;
 		@include border-radius(4px);
 		border:1px solid #aaa;
@@ -123,8 +123,8 @@ a {
 	border-radius:3px;
 	border:1px solid #213a6e;
 	box-shadow:0 1px 2px #5f7ab3 inset, 0 -1px 1px #1b315d inset;
-	height:48px;
-	padding:12px 0 0;
+	height:49px;
+	padding:11px 0 0;
 	display:inline-block;
 	text-align:center;
 }
