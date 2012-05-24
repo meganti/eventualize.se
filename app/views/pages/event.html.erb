@@ -1,17 +1,28 @@
-<div class="main">
+<div class="event">
 	
 	<div class="eventinfo">
-		<h2 class="eventinfo__eventname"><%= @event.name %></h2>
-		<h3 class="eventinfo__ownername"><span>by</span> <%= @event.owner.name %></h3>
-		<p class="eventinfo__description"><%= @event.description %></p>
-		<p class="eventifo__eventtime"><%= @event.start_time.strftime("%d/%m/%Y %H:%M") %></p>
+		<div class="eventinfo__leftcolumn">
+			<%= image_tag @event.picture, :alt => @event.name, :class => 'eventinfo__image' %>
+			<p class="eventinfo__eventdate"><%= @event.start_time.strftime("%d/%m") %></p>
+			<p class="eventinfo__eventtime"><%= @event.start_time.strftime("%H:%M") %></p>
+		</div>
+		<div class="eventinfo__rightcolumn">
+			<h2 class="eventinfo__eventname"><%= @event.name %></h2>
+			<h3 class="eventinfo__ownername"><span>by</span> <%= @event.owner.name %></h3>
+			<p class="eventinfo__description"><%= @event.description %></p>
+			<div class="eventinfo__people">
+				<p class="eventinfo__men"><%= @males.size %></p>
+				<p class="eventinfo__women"><%= @females.size %></p>
+			</div>
+		</div>
 	</div>
+	
+	<br />
+	<br />
 	
 </div>
 
-<p>Homens: <%= @males.size %></p>
-<p>Damas:  <%= @females.size %></p>
-
+<!--
 <h3>Homens:</h3>
 <% @males.each do |user| %>
   <%= link_to user["name"], user["link"] %> <br>
@@ -21,4 +32,5 @@
 <% @females.each do |user| %>
   <%= link_to user["name"], user["link"] %> <br>
 <% end %>
+-->
 
